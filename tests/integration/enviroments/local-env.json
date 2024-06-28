@@ -1,0 +1,15 @@
+{
+	"id": "49c469de-8049-46df-b6be-0ec93e18e591",
+	"name": "Local jul",
+	"values": [
+		{
+			"key": "SERVER",
+			"value": "http://localhost:10002",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2024-06-28T12:26:22.774Z",
+	"_postman_exported_using": "Postman/11.2.23-240627-1207"
+}
