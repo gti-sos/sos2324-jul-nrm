@@ -9,7 +9,7 @@ jobs:
       - run: npm start &
       - run: npm test
 
-    deploy:
+  deploy:
     needs: [test]   
     runs-on: ubuntu-latest
     environment: production
@@ -27,8 +27,8 @@ jobs:
       - name: 'Use gcloud CLI'
         run: 'gcloud info'
 
-      - run: cd front; npm install; npm install axios; cd ..
-      - run: cd front; npm run build; cd ..
+    - run: cd front; npm install; npm install axios; cd ..
+    - run: cd front; npm run build; cd ..
     
-      - name: Deploy
-        run: gcloud app deploy
+    - name: Deploy
+      run: gcloud app deploy
