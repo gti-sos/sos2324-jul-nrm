@@ -1,0 +1,15 @@
+{
+	"id": "9e30c840-156d-490b-9818-a18a15f25126",
+	"name": "Gcloud",
+	"values": [
+		{
+			"key": "SERVER",
+			"value": "https://sos2324-jul-nrm-428011.ew.r.appspot.com",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2024-06-30T12:20:04.332Z",
+	"_postman_exported_using": "Postman/11.2.23-240627-1207"
+}
