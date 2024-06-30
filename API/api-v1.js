@@ -375,4 +375,4 @@ function apiUfc(app, dbUfc) {
     });
 
 }
-module.exports =  apiUfc;
+export  { apiUfc };
