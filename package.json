@@ -4,7 +4,9 @@
   "scripts": {
     "start": "node index.js",
     "test": "npm run test-NRM",
-    "test-NRM": "npx newman run ./tests/integration/api-local.json -e ./tests/integration/enviroments/local-env.json"
+    "test-NRM": "npx newman run ./tests/integration/api-gcloud.json -e ./tests/integration/enviroments/gcloud-env.json",
+    "test-local": "npx newman run ./tests/integration/api-local.json -e ./tests/integration/enviroments/local-env.json "
+
   },
   "dependencies": {
     "body-parser": "^1.20.2",

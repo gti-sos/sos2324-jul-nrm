@@ -1,0 +1,798 @@
+{
+	"info": {
+		"_postman_id": "eef3a908-8298-4692-b54f-948de98a7313",
+		"name": "nrm jul gcloud collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32992444"
+	},
+	"item": [
+		{
+			"name": "ufc-events-data/loadInitialData",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{SERVER}}/api/v1/ufc-events-data/loadInitialData",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ufc-events-data",
+						"loadInitialData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ufc-events-data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{SERVER}}/api/v1/ufc-events-data",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ufc-events-data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ufc-events-data?fighter1=Joaquim%20Silva",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{SERVER}}/api/v1/ufc-events-data?fighter1=Joaquim%20Silva",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ufc-events-data"
+					],
+					"query": [
+						{
+							"key": "fighter1",
+							"value": "Joaquim%20Silva"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ufc-events-data/fighter/Joaquim%20Silva",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{SERVER}}/api/v1/ufc-events-data/fighter/Joaquim%20Silva",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ufc-events-data",
+						"fighter",
+						"Joaquim%20Silva"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ufc-events-data?round=2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{SERVER}}/api/v1/ufc-events-data?round=2",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ufc-events-data"
+					],
+					"query": [
+						{
+							"key": "round",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ufc-events-data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"location\": \"Austin Texas USA\",\r\n        \"fighter1\": \"Nikolai\",\r\n        \"fighter2\": \"Wellington Kiu\",\r\n        \"fighter_1_kd\": 0,\r\n        \"fighter_2_kd\": 0,\r\n        \"fighter_1_str\": 53,\r\n        \"fighter_2_str\": 37,\r\n        \"fighter_1_td\": 1,\r\n        \"fighter_2_td\": 1,\r\n        \"fighter_1_sub\": 1,\r\n        \"fighter_2_sub\": 0,\r\n        \"weight_class\": \"Welterweight\",\r\n        \"method\": \"SUB Rear Naked Choke\",\r\n        \"round\": 2,\r\n        \"time\": \"1:11\",\r\n        \"event_name\": \"UFC Fight Night\",\r\n        \"date\": \"2-Dec-23\",\r\n        \"winner\": \"Nikolai\",\r\n        \"views\": 777653\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{SERVER}}/api/v1/ufc-events-data/",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ufc-events-data",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ufc-events-data CONFLICT",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 409\", function () {\r",
+							"    pm.response.to.have.status(409);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"location\": \"Austin Texas USA\",\r\n        \"fighter1\": \"Nikolai\",\r\n        \"fighter2\": \"Wellington Kiu\",\r\n        \"fighter_1_kd\": 0,\r\n        \"fighter_2_kd\": 0,\r\n        \"fighter_1_str\": 53,\r\n        \"fighter_2_str\": 37,\r\n        \"fighter_1_td\": 1,\r\n        \"fighter_2_td\": 1,\r\n        \"fighter_1_sub\": 1,\r\n        \"fighter_2_sub\": 0,\r\n        \"weight_class\": \"Welterweight\",\r\n        \"method\": \"SUB Rear Naked Choke\",\r\n        \"round\": 2,\r\n        \"time\": \"1:11\",\r\n        \"event_name\": \"UFC Fight Night\",\r\n        \"date\": \"2-Dec-23\",\r\n        \"winner\": \"Nikolai\",\r\n        \"views\": 777653\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{SERVER}}/api/v1/ufc-events-data",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ufc-events-data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ufc-event-data BAD REQUEST",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"location\": \"Austin Texas USA\",\r\n        \"fighter1\": \"Nikolai\",\r\n        \"fighter2\": \"Wellington Kiu\",\r\n        \"fighter_1_kd\": 0,\r\n        \"fighter_2_kd\": 0,\r\n        \"fighter_1_str\": 53,\r\n        \"fighter_2_str\": 37,\r\n        \"fighter_1_td\": 1,\r\n        \"fighter_2_td\": 1,\r\n        \"fighter_1_sub\": 1,\r\n        \"fighter_2_sub\": 0,\r\n        \"weight_class\": \"Welterweight\",\r\n        \"method\": \"SUB Rear Naked Choke\",\r\n        \"round\": 2,\r\n        \"time\": \"1:11\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{SERVER}}/api/v1/ufc-events-data",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ufc-events-data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ufc-events-data/Lightweight",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{SERVER}}/api/v1/ufc-events-data/Lightweight",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ufc-events-data",
+						"Lightweight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ufc-events-data/Welterweight",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{SERVER}}/api/v1/ufc-events-data/Welterweight",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ufc-events-data",
+						"Welterweight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ufc-events-data/stats/Arman%20Tsarukyan/Beneil%20Dariush/2-Dec-23 BAD REQUEST",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"location\": \"Austin Texas USA\",\r\n        \"fighter1\": \"Arman Tsarukyan\",\r\n        \"fighter2\": \"Beneil Dariush\",\r\n        \"fighter_1_kd\": 5,\r\n        \"fighter_2_kd\": 0,\r\n        \"fighter_1_str\": 8,\r\n        \"fighter_2_str\": 2,\r\n        \"fighter_1_td\": 0,\r\n        \"fighter_2_td\": 0,\r\n        \"fighter_1_sub\": 0,\r\n        \"fighter_2_sub\": 0,\r\n        \"weight_class\": \"Lightweight\",\r\n        \"method\": \"KO/TKO Punch\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{SERVER}}/api/v1/ufc-events-data/stats/Arman%20Tsarukyan/Beneil%20Dariush/2-Dec-23",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ufc-events-data",
+						"stats",
+						"Arman%20Tsarukyan",
+						"Beneil%20Dariush",
+						"2-Dec-23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ufc-events-data/Welterweight NOT FOUND",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{SERVER}}/api/v1/ufc-events-data/Welterweight",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ufc-events-data",
+						"Welterweight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ufc-events-data/Welterweight METHOD NOT ALLOWED",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 405\", function () {\r",
+							"    pm.response.to.have.status(405);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"location\": \"Austin Texas USA\",\r\n        \"fighter1\": \"Nikolai\",\r\n        \"fighter2\": \"Wellington Kiu\",\r\n        \"fighter_1_kd\": 0,\r\n        \"fighter_2_kd\": 0,\r\n        \"fighter_1_str\": 53,\r\n        \"fighter_2_str\": 37,\r\n        \"fighter_1_td\": 1,\r\n        \"fighter_2_td\": 1,\r\n        \"fighter_1_sub\": 1,\r\n        \"fighter_2_sub\": 0,\r\n        \"weight_class\": \"Welterweight\",\r\n        \"method\": \"SUB Rear Naked Choke\",\r\n        \"round\": 2,\r\n        \"time\": \"1:11\",\r\n        \"event_name\": \"UFC Fight Night\",\r\n        \"date\": \"2-Dec-23\",\r\n        \"winner\": \"Nikolai\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{SERVER}}/api/v1/ufc-events-data/Welterweight",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ufc-events-data",
+						"Welterweight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ufc-events-data/Arman%20Tsarukyan/Beneil%20Dariush/2023-05-05",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"location\": \"USA\",\r\n        \"fighter1\": \"Arman Tsarukyan\",\r\n        \"fighter2\": \"Beneil Dariush\",\r\n        \"fighter_1_kd\": 1,\r\n        \"fighter_2_kd\": 0,\r\n        \"fighter_1_str\": 8,\r\n        \"fighter_2_str\": 2,\r\n        \"fighter_1_td\": 0,\r\n        \"fighter_2_td\": 0,\r\n        \"fighter_1_sub\": 0,\r\n        \"fighter_2_sub\": 0,\r\n        \"weight_class\": \"Lightweight\",\r\n        \"method\": \"KO/TKO Punch\",\r\n        \"round\": 1,\r\n        \"time\": \"1:04\",\r\n        \"event_name\": \"UFC Fight Night\",\r\n        \"date\": \"2023-05-05\",\r\n        \"winner\": \"Arman Tsarukyan\",\r\n        \"views\": 341234\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{SERVER}}/api/v1/ufc-events-data/stats/Arman%20Tsarukyan/Beneil%20Dariush/2023-05-05",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ufc-events-data",
+						"stats",
+						"Arman%20Tsarukyan",
+						"Beneil%20Dariush",
+						"2023-05-05"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ufc-events-data/stats/Arman%20Tsarukyan/Beneil%20Dariush/2023-05-05",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{SERVER}}/api/v1/ufc-events-data/stats/Arman%20Tsarukyan/Beneil%20Dariush/2023-05-05",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ufc-events-data",
+						"stats",
+						"Arman%20Tsarukyan",
+						"Beneil%20Dariush",
+						"2023-05-05"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ufc-events-data/stats/Arman%20Tsarukyan/Beneil%20Dariush/2023-05-05 NOT FOUND",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{SERVER}}/api/v1/ufc-events-data/stats/Arman%20Tsarukyan/Beneil%20Dariush/2023-05-05",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ufc-events-data",
+						"stats",
+						"Arman%20Tsarukyan",
+						"Beneil%20Dariush",
+						"2023-05-05"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ufc-events-data/stats/Arman%20Tsarukyan/Beneil%20Dariush/2023-05-05 NOT FOUND",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{SERVER}}/api/v1/ufc-events-data/stats/Arman%20Tsarukyan/Beneil%20Dariush/2-Dec-23",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ufc-events-data",
+						"stats",
+						"Arman%20Tsarukyan",
+						"Beneil%20Dariush",
+						"2-Dec-23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ufc-events-data/stats/Arman%20Tsarukyan/Beneil%20Dariush/2023-05-05 NOT FOUND",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{SERVER}}/api/v1/ufc-events-data/stats/Arman%20Tsarukyan/Beneil%20Dariush/2023-05-05",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ufc-events-data",
+						"stats",
+						"Arman%20Tsarukyan",
+						"Beneil%20Dariush",
+						"2023-05-05"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ufc-events-data METHOD NOT ALLOWED",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 405\", function () {\r",
+							"    pm.response.to.have.status(405);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"location\": \"Austin Texas USA\",\r\n    \"fighter1\": \"Niko\",\r\n    \"fighter2\": \"El Notas\",\r\n    \"fighter_1_kd\": 10,\r\n    \"fighter_2_kd\": 0,\r\n    \"fighter_1_str\": 80,\r\n    \"fighter_2_str\": 2,\r\n    \"fighter_1_td\": 0,\r\n    \"fighter_2_td\": 0,\r\n    \"fighter_1_sub\": 0,\r\n    \"fighter_2_sub\": 0,\r\n    \"weight_class\": \"Lightweight\",\r\n    \"method\": \"KO/TKO Punch\",\r\n    \"round\": 1,\r\n    \"time\": \"1:04\",\r\n    \"event_name\": \"UFC Fight Night\",\r\n    \"date\": \"2-Nov-23\",\r\n    \"winner\": \"Arman Tsarukyan\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{SERVER}}/api/v1/ufc-events-data",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ufc-events-data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ufc-events-data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{SERVER}}/api/v1/ufc-events-data",
+					"host": [
+						"{{SERVER}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ufc-events-data"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
