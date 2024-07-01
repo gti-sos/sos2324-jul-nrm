@@ -17,12 +17,11 @@
     </Row>
     <br>
     <Row>
-        <strong>Front-End: </strong><NavLink href="/ufc-events-data">ufc-events-data</NavLink>
-       
+        <Col><strong>Front-End: </strong><NavLink href="/ufc-events-data">ufc-events-data</NavLink></Col>
     </Row>
     <br>
     <Row>
-        <strong>API Base: </strong><NavLink href="/api/v1/ufc-events-data">ufc-events-data</NavLink>
+        <Col><strong>API Base: </strong><NavLink href="/api/v1/ufc-events-data">ufc-events-data</NavLink></Col>
     </Row>
     <br>
     <Row>
@@ -30,7 +29,7 @@
     </Row>
     <br>
     <Row>
-        <strong>Documentación:</strong><NavLink href="https://documenter.getpostman.com/view/32992444/2sA3duHDdS">/api/v2/ufc-events-data/docs (developed by Nicolás Redondo Moreno)</NavLink>
+        <Col><strong>Documentación:</strong><NavLink href="https://documenter.getpostman.com/view/32992444/2sA3duHDdS">/api/v2/ufc-events-data/docs (developed by Nicolás Redondo Moreno)</NavLink></Col>
     </Row>
     <br>
     <Row>
@@ -38,6 +37,6 @@
     </Row>
     <br>
     <Row>
-        <strong>Developed by:</strong> <NavLink width="20px" href="https://github.com/NicoRedondoo">Nicolás Redondo Moreno - <a href="https://docs.google.com/spreadsheets/d/1w-PwFC-4Cl3YDFELyqrB9bi7eR_ZPIYnrHOx83KctC8/edit#gid=1179082162"> ufc-events-data</a></NavLink>
+        <Col><strong>Developed by:</strong> <NavLink width="20px" href="https://github.com/NicoRedondoo">Nicolás Redondo Moreno - <a href="https://docs.google.com/spreadsheets/d/1w-PwFC-4Cl3YDFELyqrB9bi7eR_ZPIYnrHOx83KctC8/edit#gid=1179082162"> ufc-events-data</a></NavLink></Col>
     </Row>
 </Container>
