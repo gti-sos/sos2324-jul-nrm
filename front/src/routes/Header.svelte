@@ -1,28 +1,30 @@
 <script lang="ts">
-    import { Container, Row, Col, Nav, NavItem, Dropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink} from '@sveltestrap/sveltestrap';
+    import { Container, Row, Col, Nav, NavItem, NavLink} from '@sveltestrap/sveltestrap';
 
 </script>
 <Container>
   <Row>
     <Nav underline>
-      <Col xs=1>
+      <Col xs=3>
         <NavItem>
           <NavLink href="/" >Home</NavLink>
         </NavItem>
       </Col>
-      <NavItem>
-        <NavLink href="/ufc-events-data">ufc-events-data</NavLink>
-      </NavItem>
-      <Col xs=1>
+      <Col xs=3>
+        <NavItem>
+          <NavLink href="/ufc-events-data">API</NavLink>
+        </NavItem>
+      </Col>
+      <Col xs=3>
         <NavItem>
           <NavLink href="/about">About</NavLink>
         </NavItem>
       </Col>
-      <Col xs=1>
+      <Col xs=3>
         <NavItem>
           <NavLink href="/integrations">Integrations</NavLink>
         </NavItem>
-        </Col>
+      </Col>
     </Nav>
   </Row>
 </Container>

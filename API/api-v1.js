@@ -1,4 +1,4 @@
-const {ufc_data} = require('./index-api.js');
+import {ufc_data}  from './index-api.js';
 const API_BASE = '/api/v1';
 
 function apiUfc(app, dbUfc) {
