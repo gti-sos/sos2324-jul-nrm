@@ -6,8 +6,10 @@ jobs:
     environment: production
     steps:
       - uses: actions/checkout@v4
-      - run: npm install
-      - run: npm start &
+      - run: cd front; npm install --legacy-peer-deps; cd ..
+      - run: cd front; npm run build; cd ..
+      - run: npm install --legacy-peer-deps
+      - run: npx playwright install --with-deps
       - run: npm test
   deploy:
     needs: [test]   

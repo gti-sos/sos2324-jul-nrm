@@ -1,10 +1,11 @@
-const {ufc_data} = require('./index-api.js');
+import {ufc_data}  from './index-api.js';
 const API_BASE = '/api/v1';
 
 function apiUfc(app, dbUfc) {
 
     let dataset = [];
 
+    
     // CREAR initial data
     app.get(API_BASE+"/ufc-events-data/loadInitialData", (req, res) => {
         dbUfc.find({}, (err, docs) => {
@@ -375,4 +376,4 @@ function apiUfc(app, dbUfc) {
     });
 
 }
-module.exports =  apiUfc;
+export  { apiUfc };

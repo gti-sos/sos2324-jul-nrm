@@ -3,15 +3,24 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node index.js",
-    "test": "npm run test-NRM",
-    "test-NRM": "npx newman run ./tests/integration/api-gcloud.json -e ./tests/integration/enviroments/gcloud-env.json",
-    "test-local": "npx newman run ./tests/integration/api-local.json -e ./tests/integration/enviroments/local-env.json "
-
+    "pretest": "npm start &",
+    "test": "npm run test-integration && npm run test-e2e",
+    "test-integration": "npx newman run ./tests/integration/api-gcloud.json -e ./tests/integration/enviroments/gcloud-env.json",
+    "test-local": "npx newman run ./tests/integration/api-local.json -e ./tests/integration/enviroments/local-env.json ",
+    "test-e2e": "npx playwright test",
+    "posttest": "kill `ps -uax | grep \"node index\" | grep -v \"grep\" | grep -v \"sh\" | awk '{print $2}'`"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
     "cool-ascii-faces": "^1.3.4",
+    "d3": "^7.9.0",
     "express": "^4.18.3",
-    "nedb": "^1.8.0"
+    "nedb": "^1.8.0",
+    "sveltestrap": "^5.11.3"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "^1.45.0",
+    "@types/node": "^20.14.9"
   }
 }

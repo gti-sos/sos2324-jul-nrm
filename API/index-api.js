@@ -12,4 +12,4 @@ const ufc_data = [
     "UK\tJared Gooden\tWellington Turman\t0.0\t0.0\t53.0\t37.0\t1.0\t1.0\t1.0\t0.0\tWelterweight\tSUB Rear Naked Choke\t2.0\t1:11\tUFC Fight Night\t2023-05-09\tJared Gooden\t4576432"
 ];
 
-module.exports = { ufc_data };
+export { ufc_data };
