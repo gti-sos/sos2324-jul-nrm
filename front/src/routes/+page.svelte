@@ -29,7 +29,7 @@
     </Row>
     <br>
     <Row>
-        <Col><strong>Documentación:</strong><NavLink href="https://documenter.getpostman.com/view/32992444/2sA3duHDdS">/api/v2/ufc-events-data/docs (developed by Nicolás Redondo Moreno)</NavLink></Col>
+        <Col><strong>Documentación:</strong><NavLink href="https://documenter.getpostman.com/view/32992444/2sA3duHDdS">/api/v1/ufc-events-data/docs (developed by Nicolás Redondo Moreno)</NavLink></Col>
     </Row>
     <br>
     <Row>

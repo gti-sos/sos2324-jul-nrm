@@ -7,7 +7,7 @@ const ufc_data = [
     "Francia\tDustin Stoltzfus\tPunahele Soriano\t1.0\t0.0\t64.0\t31.0\t4.0\t0.0\t1.0\t0.0\tMiddleweight\tSUB Rear Naked Choke\t2.0\t4:10\tUFC Fight Night\t2023-12-03\tDustin Stoltzfus\t375969",
     "España\tMiesha Tate\tJulia Avila\t0.0\t0.0\t32.0\t3.0\t4.0\t0.0\t1.0\t0.0\tWomen's Bantamweight\tSUB Rear Naked Choke\t3.0\t1:15\tUFC Fight Night\t2023-05-09\tMiesha Tate\t575677",
     "España\tCody Brundage\tZach Reese\t0.0\t0.0\t9.0\t4.0\t1.0\t0.0\t0.0\t1.0\tMiddleweight\tKO/TKO Slam\t1.0\t1:49\tUFC Fight Night\t2023-10-05\tCody Brundage\t908676",
-    "UK\tDrakkar Klose\tJoe Solecki\t0.0\t0.0\t2.0\t1.0\t0.0\t1.0\t0.0\t0.0\tLightweight\tKO/TKO Slam\t1.0\t1:41\tUFC Fight Night\t2023-06-11\tDrakkar Klose\t875636",
+    "UK\tDrakkar Klose\tJoe Solecki\t0.0\t0.0\t2.0\t1.0\t0.0\t1.0\t0.0\t0.0\tLightweight\tKO/TKO Slam\t1.0\t1:41\tUFC Fight Night\t2023-06-11\tDrakkar Klose\t1875636",
     "UK\tRodolfo Bellato\tIhor Potieria\t0.0\t1.0\t80.0\t73.0\t1.0\t0.0\t0.0\t0.0\tLight Heavyweight\tKO/TKO Punches\t2.0\t4:17\tUFC Fight Night\t2023-05-05\tRodolfo Bellato\t1297687",
     "UK\tJared Gooden\tWellington Turman\t0.0\t0.0\t53.0\t37.0\t1.0\t1.0\t1.0\t0.0\tWelterweight\tSUB Rear Naked Choke\t2.0\t1:11\tUFC Fight Night\t2023-05-09\tJared Gooden\t4576432"
 ];

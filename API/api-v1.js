@@ -1,5 +1,6 @@
 import {ufc_data}  from './index-api.js';
 const API_BASE = '/api/v1';
+import fetch from 'node-fetch';
 
 function apiUfc(app, dbUfc) {
 
@@ -373,6 +374,56 @@ function apiUfc(app, dbUfc) {
                 }
             }
         });
+    });
+
+    // Proxy tenis
+    app.get(API_BASE+'/proxyTennis', async (req, res) => {
+        try {
+            // Endpoint de la API para obtener los 500 mejores jugadores de la ATP
+            const url = 'https://tennisapi1.p.rapidapi.com/api/tennis/rankings/atp';
+
+            const response = await fetch(url, {
+                headers: {
+                    
+                    'X-RapidAPI-Key': '88a523cd96msh3544e0ee37800ebp1845b1jsnf31a7971dadb'
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error(`Error al obtener los datos de la API: ${response.statusText}`);
+            }
+
+            const data = await response.json();
+            console.log(data);
+            res.json(data);
+        } catch (error) {
+            console.error('Error en el proxy al obtener datos desde la API:', error);
+            res.status(500).json({ error: 'Hubo un error al obtener los datos desde la API' });
+        }
+    }); 
+
+    // Proxy Crypto
+    app.get(API_BASE+'/proxyCrypto', async (req, res) => {
+        try {
+            const url = 'https://coinranking1.p.rapidapi.com/coins?referenceCurrencyUuid=yhjMzLPhuIDl&timePeriod=24h&tiers%5B0%5D=1&orderBy=marketCap&orderDirection=desc&limit=50&offset=0';
+            const options = {
+                method: 'GET',
+                headers: {
+                    'X-RapidAPI-Key': '88a523cd96msh3544e0ee37800ebp1845b1jsnf31a7971dadb',
+                    'X-RapidAPI-Host': 'coinranking1.p.rapidapi.com'
+                }
+            };
+    
+            const response = await fetch(url, options);
+            if (!response.ok) {
+                throw new Error('Error en la respuesta de la API');
+            }
+            const data = await response.json();
+            res.json(data);
+        } catch (error) {
+            console.error('Error al obtener datos desde la API:', error);
+            res.status(500).json({ error: 'Hubo un error al obtener los datos desde la API' });
+        }
     });
 
 }

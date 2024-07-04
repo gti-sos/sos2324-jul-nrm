@@ -12,7 +12,7 @@
       </Col>
       <Col xs=3>
         <NavItem>
-          <NavLink href="/ufc-events-data">API</NavLink>
+          <NavLink href="/ufc-events-data">Front</NavLink>
         </NavItem>
       </Col>
       <Col xs=3>
