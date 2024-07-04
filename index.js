@@ -9,7 +9,7 @@ import {apiUfc} from './API/api-v1.js';
 let dataUfc = new dataStore();
 
 let app = express();
-const PORT = (process.env.PORT || 10002);
+const PORT = (process.env.PORT || 3000);
 
 app.use(cors({
     "origin": "*",
