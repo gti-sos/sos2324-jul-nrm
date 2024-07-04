@@ -133,6 +133,7 @@ dist
 gc-sa-key.json
 
 front/node_modules
+frontend/node_modules
 /test-results/
 /playwright-report/
 /blob-report/

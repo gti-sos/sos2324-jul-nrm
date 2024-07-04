@@ -118,7 +118,7 @@ function apiUfc(app, dbUfc) {
                 }
             }
         })
-    });
+    })
 
     // POST Nuevo evento
     app.post(API_BASE + "/ufc-events-data", (req, res) => {
