@@ -53,7 +53,9 @@
 
     async function fetchTop10UFCEvents() {
         try {
-            let API = 'http://localhost:10002/api/v1';
+            let API = 'https://sos2324-jul-nrm-428011.ew.r.appspot.com/api/v1'; 
+            if (dev) API = 'http://localhost:10002/api/v1';
+            
             const response = await fetch(`${API}/ufc-events-data`);
             if (response.ok) {
                 const data = await response.json();
