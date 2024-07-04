@@ -13,6 +13,6 @@
     <br>
 	<h1>Vídeos</h1>
 	<ul>
-        <li><a href="https://youtu.be/IDtIBTFnutc">Nicolás Redondo Moreno</a></li>
+        <li><a href="https://youtu.be/IDtIBTFnutc">Nicolás Redondo Moreno </a></li>
 	</ul>
 </Container>
