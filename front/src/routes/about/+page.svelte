@@ -13,6 +13,6 @@
     <br>
 	<h1>Vídeos</h1>
 	<ul>
-        <li><a href="https://www.loom.com/share/a266187220b04de093b1dd673d028c94">Nicolás Redondo Moreno</a></li>
+        <li><a href="https://youtu.be/IDtIBTFnutc">Nicolás Redondo Moreno</a></li>
 	</ul>
 </Container>

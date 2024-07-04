@@ -185,9 +185,6 @@
 }
 
 
-
-
-
     async function fillPieChart(dt) {
         console.log('Entro en pie charts');
         const durationMap = new Map();
