@@ -2,14 +2,14 @@
 const { test, expect } = require('@playwright/test');
 
 test('has title', async ({ page }) => {
-  await page.goto('https://sos2324-jul-nrm-428011.ew.r.appspot.com');
+  await page.goto('http://localhost:3000');
 
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/APIs nicredmor/);
 });
 
 test('loads data list on button click', async ({ page }) => {
-  await page.goto('https://sos2324-jul-nrm-428011.ew.r.appspot.com/ufc-events-data');
+  await page.goto('http://localhost:3000/ufc-events-data');
 
   // Click the "Insertar datos" button
   await page.locator('text=Insertar datos').click();
