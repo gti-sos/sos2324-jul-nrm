@@ -10,3 +10,5 @@
 - **APIS:** [/v1/ufc-events-data/docs](http://sos2324-14.appspot.com/api/v2/ufc-events-data/docs) (developed by Nicolás Redondo Moreno)
 
 - **FrontEnds:** [ufc-events-data](https://sos2324-14.appspot.com/ufc-events-data) (developed by Nicolás Redondo Moreno)
+
+- **DockerHub:** comando docker run -p 3000:3000 nik01234/sos2324-jul-nrm
